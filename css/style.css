@@ -122,8 +122,8 @@ nav ul li a:hover {
   
 .content-pocetna {
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff41;
+    box-shadow: 50px 50px 50px 50px rgba(0.1, 0.1, 0.1, 0.1);
     border-radius: 5px;    display: flex;
     justify-content: center;
     align-items: center;
@@ -193,3 +193,89 @@ nav ul li a:hover {
     }
 }
 
+.content-kontakt {
+    padding: 20px;
+    background-color: #ffffff41;
+    box-shadow: 50px 50px 50px 50px rgba(0.1, 0.1, 0.1, 0.1); 
+    border-radius: 5px;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+    margin-top: 120px; 
+    margin-bottom: 60px; 
+    color: #5C3D2E; 
+    width: 60%;
+  }
+
+
+  /* ... existing CSS ... */
+
+.social-links a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #5C3D2E; /* Or any color you want for the text */
+    margin-bottom: 10px; /* Spacing between each link */
+  }
+  
+  .social-links img {
+    width: 50px; /* Or the size you prefer */
+    height: auto;
+    margin-right: 10px; /* Spacing between icon and text */
+  }
+  
+  .social-links span {
+    /* If you want to style the text next to the social media icons */
+  }
+  
+  @media (max-width: 600px) {
+    .social-links a {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+  
+.content-kontakt {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 2rem;
+    margin-top: 120px; 
+    margin-bottom: 60px; 
+    max-width: 1000px; 
+  }
+  
+  .social-links {
+    font-size: larger;
+    flex-basis: auto;
+  }
+  
+  .text-kontakt {
+    flex-basis: auto;
+    text-align: right; 
+    margin-left: 2rem; 
+    font-size: larger;
+  }
+  
+  footer {
+    position: relative; 
+    width: 100%;
+  }
+  
+  @media (max-width: 600px) {
+    .content-kontakt {
+      flex-direction: column;
+      align-items: flex-start; 
+    }
+  
+    .social-links,
+    .text-kontakt {
+      flex-basis: 100%; 
+      text-align: left; 
+    }
+  
+  }
+  
+  
