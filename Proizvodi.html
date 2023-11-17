@@ -1,0 +1,123 @@
+ <!-- Product items will be displayed here -->
+ <section class="products" id="products">
+    <article class="product-item">
+      <img src="path-to-crochet-toy-image.jpg" alt="Crochet Toy">
+      <h3>Product Name</h3>
+      <p>Description of the crochet toy.</p>
+      <button>Add to Cart</button>
+    </article>
+    <!-- Repeat for each product -->
+  </section>
+
+
+
+  /* Reset some default styles */
+*, *:before, *:after {
+    box-sizing: border-box;
+  }
+  
+  /* Apply a consistent base font and color */
+  body {
+    font-family: 'Arial', sans-serif;
+    color: #5C3D2E; /* Brown color from the logo */
+    margin: 0;
+    padding: 0;
+    background-color: #FAE8E0; /* Light pink background to match the logo */
+  }
+  
+  /* Style the header */
+  header {
+    background-color: #F4C2C2; /* Soft pink from the logo */
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  header h1 {
+    color: #5C3D2E; /* Brown color from the logo for contrast */
+    margin: 0;
+  }
+  
+  /* Style the navigation menu links */
+  nav {
+    background-color: #F9D5E5; /* Light pink accent */
+    padding: 10px 0;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  nav ul li {
+    float: left;
+  }
+  
+  nav ul li a {
+    display: block;
+    color: #5C3D2E; /* Brown color from the logo */
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  nav ul li a:hover {
+    background-color: #FADADD; /* Slightly darker pink for hover effect */
+    color: #5C3D2E;
+  }
+  
+  /* Style the footer */
+  footer {
+    background-color: #F9D5E5; /* Light pink accent */
+    color: #5C3D2E; /* Brown color text */
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  
+  /* Responsive images */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Logo image */
+  .logo {
+    width: 100px; /* or your preferred size */
+    height: auto;
+  }
+  
+  /* Utility classes for padding and margin */
+  .p-1 { padding: 5px; }
+  .m-1 { margin: 5px; }
+  .p-2 { padding: 10px; }
+  .m-2 { margin: 10px; }
+  
+  /* Custom classes for specific elements or components */
+  .product-item {
+    border: 1px solid #FADADD; /* Pink border */
+    padding: 10px;
+    margin: 10px;
+    background-color: white;
+    border-radius: 4px;
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  
+  .product-item:hover {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Responsive design breakpoints */
+  @media only screen and (max-width: 600px) {
+    nav ul li {
+      float: none;
+    }
+  }
+  
