@@ -278,4 +278,29 @@ nav ul li a:hover {
   
   }
   
+  /* Dodajte ovaj stil na kraj vašeg CSS fajla */
+.oNama-Content {
+    padding: 20px;
+    background-color: #ffffff41;
+    box-shadow: 50px 50px 50px 50px rgba(0.1, 0.1, 0.1, 0.1);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 120px;
+    margin-bottom: 60px;
+    color: #5C3D2E;
+    width: 60%;
+    /* Ukoliko želite da sadržaj bude centriran u okviru viewport-a */
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* Ako želite da tekst bude centriran unutar .oNama-Content */
+  .about-section {
+    text-align: center;
+  }
+  
+  /* Ostali postojeći stilovi... */
   
