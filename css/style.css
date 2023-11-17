@@ -1,5 +1,5 @@
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: South Island;
     margin: 0;
     padding: 0;
     display: flex;
@@ -7,6 +7,16 @@ body {
     align-items: center;
     min-height: 100vh;
     background-color: #FAE8E0; 
+}
+
+.pozadina {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-size: cover;
 }
 
 main {
@@ -74,6 +84,107 @@ nav ul li a:hover {
     border-radius: 5px;
 }
 
+.content-wrapper {
+    text-align: center;
+    padding: 2rem;
+    max-width: 800px; 
+    margin: 120px auto 0; 
+  }
+  
+  .logo {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+  
+  .company-info h2 {
+    color: #5C3D2E; 
+    font-size: 2rem; 
+    margin-bottom: 0.5rem;
+  }
+  
+  .company-info p {
+    color: #5C3D2E;
+    font-size: 1rem; 
+    line-height: 1.5; 
+  }
+  
+  @media (max-width: 600px) {
+    .content-wrapper {
+      margin-top: 150px; 
+      padding: 1rem;
+    }
+  
+    .company-info h2 {
+      font-size: 1.5rem; 
+    }
+  }
+  
+.content-pocetna {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+    margin-top: 120px; 
+    margin-bottom: 60px; 
+    color: #5C3D2E; 
+    width: 60%;
+  }
+  
+  .slika-pocetna {
+    flex-basis: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .text-pocetna {
+    font-family: South Island;
+    width: 70%;
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: right;
+    font-size: larger;
+  }
+
+  
+  .logo {
+    width: 100%;
+    max-width: 300px; 
+    height: auto;
+  }
+  
+  footer {
+    background-color: #F9D5E5; 
+    color: #5C3D2E; 
+    text-align: center;
+    padding: 1.5rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  
+  @media (max-width: 600px) {
+    .content-pocetna {
+      flex-direction: column;
+      margin-top: 150px; 
+    }
+  
+    .slika-pocetna,
+    .text-pocetna {
+      flex-basis: 100%;
+    }
+  }  
 
 @media (max-width: 600px) {
     nav ul {
@@ -81,3 +192,4 @@ nav ul li a:hover {
         gap: 10px; /
     }
 }
+
