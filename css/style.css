@@ -210,24 +210,18 @@ nav ul li a:hover {
   }
 
 
-  /* ... existing CSS ... */
-
 .social-links a {
     display: flex;
     align-items: center;
     text-decoration: none;
-    color: #5C3D2E; /* Or any color you want for the text */
-    margin-bottom: 10px; /* Spacing between each link */
+    color: #5C3D2E; 
+    margin-bottom: 10px; 
   }
   
   .social-links img {
-    width: 50px; /* Or the size you prefer */
+    width: 50px; 
     height: auto;
-    margin-right: 10px; /* Spacing between icon and text */
-  }
-  
-  .social-links span {
-    /* If you want to style the text next to the social media icons */
+    margin-right: 10px; 
   }
   
   @media (max-width: 600px) {
@@ -278,7 +272,6 @@ nav ul li a:hover {
   
   }
   
-  /* Dodajte ovaj stil na kraj vašeg CSS fajla */
 .oNama-Content {
     padding: 20px;
     background-color: #ffffff41;
@@ -292,15 +285,39 @@ nav ul li a:hover {
     margin-bottom: 60px;
     color: #5C3D2E;
     width: 60%;
-    /* Ukoliko želite da sadržaj bude centriran u okviru viewport-a */
     margin-left: auto;
     margin-right: auto;
   }
   
-  /* Ako želite da tekst bude centriran unutar .oNama-Content */
   .about-section {
     text-align: center;
   }
   
-  /* Ostali postojeći stilovi... */
+  .hamburger-menu {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.hamburger-menu span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+}
+
+ 
+@media (max-width: 600px) {
+    .hamburger-menu {
+        display: flex;
+    }
+}
+
+@media (max-width: 600px) {
+    .header-h1{
+      display: none;
+    }
+    /* Ostali stilovi za male ekrane */
+  }
   
