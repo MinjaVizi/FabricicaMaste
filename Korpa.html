@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fabričica Mašte - Korpa</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.79/jquery.form-validator.min.js"></script>
+  
   </head>
   <body>
       <img src="images/pozadina.png" alt="pozadina" class="pozadina">
@@ -36,12 +39,15 @@
       </div>
       <div class="korpa-form">
         <form id="formaZaPorucivanje">
-          <input type="text" id="ime" placeholder="Ime" required />
-          <input type="text" id="prezime" placeholder="Prezime" required />
-          <input type="text" id="adresa" placeholder="Adresa" required />
-          <input type="tel" id="telefon" placeholder="Telefon" required />
-          <input type="text" id="ukupnoZaNaplatu" placeholder="Ukupno za naplatu" readonly />
-          <button type="submit">Poruči</button>
+          <form id="formaZaPorucivanje">
+            <input type="text" data-validation="required" id="ime" placeholder="Ime" required />
+            <input type="text" data-validation="required" id="prezime" placeholder="Prezime" required />
+            <input type="text" data-validation="required" id="adresa" placeholder="Adresa" required />
+            <input type="tel" data-validation="required" id="telefon" placeholder="Telefon" required />
+            <input type="text" id="ukupnoZaNaplatu" placeholder="Ukupno za naplatu" readonly />
+            <button type="submit">Poruči</button>
+          </form>
+          
         </form>
       </div>
     </div>

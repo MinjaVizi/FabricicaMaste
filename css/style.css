@@ -504,3 +504,8 @@ nav ul li a:hover {
     width: 90%;
   }
 }
+
+.form-error {
+  color: red;
+  margin-top: 5px;
+}
