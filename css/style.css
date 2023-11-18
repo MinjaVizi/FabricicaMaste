@@ -318,6 +318,189 @@ nav ul li a:hover {
     .header-h1{
       display: none;
     }
-    /* Ostali stilovi za male ekrane */
   }
   
+  .pretraga {
+    width: 100%;
+    background-color: #ffffff41;
+    box-shadow: 50px 50px 50px 50px rgba(0.1, 0.1, 0.1, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    margin-top: 35px;
+  }
+  
+  #searchInput {
+    padding: 10px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 50%;
+  }
+  
+  #searchButton {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #F4C2C2;
+    color: #5C3D2E;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #searchButton:hover {
+    background-color: #e69aa2;
+  }
+  
+  .proizvodi {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+  }
+  
+  .kartica {
+    width: 200px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .slika-proizvoda {
+    width: 100%;
+    display: block;
+  }
+  
+  .dodaj-u-korpu-btn {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #f2b6c6;
+    color: #5C3D2E;
+    font-weight: bold;
+  }
+  
+  .detalji-proizvoda {
+    display: none;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .detalji-proizvoda.active {
+    display: block;
+  }
+  
+  .modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+  background-color: #fefefeef;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  color: #5C3D2E;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.korpa-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.korpa-items {
+  width: 50%;
+}
+
+.korpa-content {
+  padding: 20px;
+  background-color: #ffffff41;
+  box-shadow: 50px 50px 50px 50px rgba(0.1, 0.1, 0.1, 0.1);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 120px;
+  margin-bottom: 60px;
+  color: #5C3D2E;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.korpa-form {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 30%; 
+  color: #5C3D2E;
+  margin-left: 0px;
+
+}
+
+.korpa-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: #5C3D2E;
+
+}
+
+.korpa-form input[type="text"],
+.korpa-form input[type="tel"] {
+  color: #5C3D2E;
+  padding: 10px;
+  border: 1px solid #f2b6c6;
+  border-radius: 5px;
+}
+
+.korpa-form button {
+  padding: 10px 20px;
+  background-color: #f2b6c6;
+  color: #5C3D2E;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.korpa-form button:hover {
+  background-color: #e69aa2;
+}
+
+@media (max-width: 768px) {
+  .korpa-form {
+    width: 90%;
+  }
+}

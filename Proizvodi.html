@@ -28,28 +28,154 @@
     </ul>
   </nav>
     </header>
-  
-  <main>
    
-    <section class="products" id="products">
-      <article class="product-item">
-        <img src="path-to-crochet-toy-image.jpg" alt="Crochet Toy">
-        <h3>Product Name</h3>
-        <p>Description of the crochet toy.</p>
-        <button>Add to Cart</button>
-      </article>
-  
-  
-    </section>
+  <main>
+    <div class="pretraga">
+      <input type="text" id="searchInput" placeholder="Pretraži..." />
+      <button id="searchButton">Pretraži</button>
+    </div>
+   
+<div class="proizvodi">
 
 
-  </main>
+  <div class="kartica" onclick="prikaziDetalje(this)">
+    <img src="images/pleteniKomplet.png" alt="Proizvod" class="slika-proizvoda">
+    <button class="dodaj-u-korpu-btn" onclick="dodajUKorpu(event, 'Proizvod 1')">Dodaj u korpu</button>
+    <div class="detalji-proizvoda">
+      <h3>Odabrana družina</h3>
+      <p>Odabrana družina! 🦆🧸🧚‍♀️🐙🐇
 
+        #toys #forkids #handmade #heklano #different #new #friends #doll #kreativnost #madewithlove #children #zanimljivo</p>
+      <p>Cena: 4499RSD</p>
+    </div>
+  </div>
 
-  <footer>
-    <p>Fabričica Mašte - sva prava zadrzana</p>
-  </footer>
-  <script src="JS/main.js"></script>
-  </body>
-  </html>
-  
+  <div class="kartica" onclick="prikaziDetalje(this)">
+    <img src="images/hobotnica.png" alt="Proizvod" class="slika-proizvoda">
+    <button class="dodaj-u-korpu-btn" onclick="dodajUKorpu(event, 'Proizvod 1')">Dodaj u korpu</button>
+    <div class="detalji-proizvoda">
+      <h3>Hobotnica</h3>
+      <p>Još jedna hobotnica spremna za druženje sa novim drugarićima. ✨
+        Za sve informacije Vam stojimo na raspolaganju 📍📬
+        
+        #igračke #ručnirad #poklonzabebu #babyset #babytoys #heklaneigracke</p>
+      <p>Cena: 999 RSD</p>
+    </div>
+  </div>
+
+  <div class="kartica" onclick="prikaziDetalje(this)">
+    <img src="images/kape.png" alt="Proizvod" class="slika-proizvoda">
+    <button class="dodaj-u-korpu-btn" onclick="dodajUKorpu(event, 'Proizvod 1')">Dodaj u korpu</button>
+    <div class="detalji-proizvoda">
+      <h3>Zimske kape</h3>
+      <p>
+        Polako, ali sigurno koračamo ka hladnijem vremenu... 🌀
+        
+        Pripremite svoje mališane na niže temperature uz udobnost i mekoću naših jedinstvenih kapica, pripremljenih sa posebnom ljubavlju i preciznošću koji su utkani u svaki naš rad ✨🧶
+        
+        Izrada u različitim veličinama po porudžbini:
+        velicine od 6 meseci do 2 godine,
+        od 2 godine do 4 godine,
+        kao i za stariju decu, mogućnost slanja tačnih mera i odredjivanje prave veličine 📝
+        
+        Nestrpljivo iščekujemo Vaše porudžbine i pitanja 📫📍</p>
+      <p>Cena: 1299 RSD</p>
+    </div>
+  </div>
+
+  <div class="kartica" onclick="prikaziDetalje(this)">
+    <img src="images/patrik.png" alt="Proizvod" class="slika-proizvoda">
+    <button class="dodaj-u-korpu-btn" onclick="dodajUKorpu(event, 'Proizvod 1')">Dodaj u korpu</button>
+    <div class="detalji-proizvoda">
+      <h3>Patrik Zvezda</h3>
+      <p>Gde je Sunđer Bob, tu je i njegov najbolji prijatelj Patrik Zvezda 🐚🫧
+        Mi pravimo najnežnije igračke za Vaše najmlađe 🐑
+        Za sve informacije Vam stojimo na raspolaganju - DM 📬
+        #patrik #sunđerbob #spungebob #handemade #pleteno
+        #igrackezabebe #babyset #heklano</p>
+      <p>Cena: 2499 RSD</p>
+    </div>
+  </div>
+  <div class="kartica" onclick="prikaziDetalje(this)">
+    <img src="images/pletenaLutka.png" alt="Proizvod" class="slika-proizvoda">
+    <button class="dodaj-u-korpu-btn" onclick="dodajUKorpu(event, 'Proizvod 1')">Dodaj u korpu</button>
+    <div class="detalji-proizvoda">
+      <h3>Pletena lutka</h3>
+      <p>Još jedna loknasta devojčica u neobičnoj odevnoj kombinaciji!
+        🧚‍♀️🌼🍀
+        Tu smo za sva Vaša pitanja i nedoumice 🎀✨
+        
+        #heklano #knittinglove #suprise #dolls #toys #new #forkids #babybox #differente #neobicno #beautiful</p>
+      <p>Cena: 2399 RSD</p>
+    </div>
+  </div> <div class="kartica" onclick="prikaziDetalje(this)">
+    <img src="images/rozePletenaLutka.png" alt="Proizvod" class="slika-proizvoda">
+    <button class="dodaj-u-korpu-btn" onclick="dodajUKorpu(event, 'Proizvod 1')">Dodaj u korpu</button>
+    <div class="detalji-proizvoda">
+      <h3>Roze pletena lutka</h3>
+      <p>Personalizovana lutkica za devojčicu u njenoj omiljenoj roze boji. 💞
+        Obradujte i Vi svoje princeze 🎀
+        #fun #presentyou #handmade #pleteno #lutkica #agrumi #pink #doll #kids #girls #newtoy #pleteneigracke</p>
+      <p>Cena: 2599 RSD</p>
+    </div>
+  </div> <div class="kartica" onclick="prikaziDetalje(this)">
+    <img src="images/sundjerBob.png" alt="Proizvod" class="slika-proizvoda">
+    <button class="dodaj-u-korpu-btn" onclick="dodajUKorpu(event, 'Proizvod 1')">Dodaj u korpu</button>
+    <div class="detalji-proizvoda">
+      <h3>Sunđer Bob</h3>
+      <p>Nešto novo i drugačije je upravo izašlo iz naše fabričice mašte ✨
+        Po specijalnoj želji jednog tate Đorđa za svoju bebu. 👣
+        Maštajte, zamišljajte, poželite, a mi smo tu da želje ostvarimo 🎁</p>
+      <p>Cena: 3799 RSD</p>
+    </div>
+  </div> <div class="kartica" onclick="prikaziDetalje(this)">
+    <img src="images/zaBebe.png" alt="Proizvod" class="slika-proizvoda">
+    <button class="dodaj-u-korpu-btn" onclick="dodajUKorpu(event, 'Proizvod 1')">Dodaj u korpu</button>
+    <div class="detalji-proizvoda">
+      <h3>Komšpletić za bebe</h3>
+      <p>Kompletiće radimo po Vašim željama.
+        Na raspolaganju smo za sve Vaše predloge - DM 💌✨
+        .</p>
+      <p>Cena: 3299 RSD</p>
+    </div>
+  </div> <div class="kartica" onclick="prikaziDetalje(this)">
+    <img src="images/zirafa.png" alt="Proizvod" class="slika-proizvoda">
+    <button class="dodaj-u-korpu-btn" onclick="dodajUKorpu(event, 'Proizvod 1')">Dodaj u korpu</button>
+    <div class="detalji-proizvoda">
+      <h3>Žirafa</h3>
+      <p>Umiljata žirafa je spremna! 
+        ✨🦒
+        Vaše je da zamislite, mi smo tu za sve ostalo! Pišite nam utiske!
+        📸🎁🎀</p>
+      <p>Cena: 1799 RSD</p>
+    </div>
+  </div> <div class="kartica" onclick="prikaziDetalje(this)">
+    <img src="images/zveckaSunce.png" alt="Proizvod" class="slika-proizvoda">
+    <button class="dodaj-u-korpu-btn" onclick="dodajUKorpu(event, 'Proizvod 1')">Dodaj u korpu</button>
+    <div class="detalji-proizvoda">
+      <h3>Zvečka/glodalica - sunce</h3>
+      <p>☀️☀️☀️
+        Proleće je tu, a sa njim i naše nove ideje za naše najmlađe. 🎁
+        Glodalica i zvečka Sunce od sada u ponudi. 🥰
+        Obradujte svoje mališane igračkom od prirodnih materijala, bezbednom za bebe, bez sitnih delova.</p>
+      <p>Cena: 1099 RSD</p>
+    </div>
+  </div>
+
+</div>
+</main>
+
+<footer>
+  <p>Fabričica Mašte - sva prava zadrzana</p>
+</footer>
+
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <div class="modal-details"></div>
+  </div>
+</div>
+
+<script src="JS/main.js"></script>
+</body>
+</html>
